@@ -1,0 +1,392 @@
+
+
+/*GLOBAL STYLES*/
+html{
+	zoom:70%;
+}
+/*font families*/
+@font-face{ 
+	font-family: 'diablo';
+	src: url('../fonts/diablo-webfont.eot');
+	src: url('../fonts/diablo-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/diablo-webfont.woff') format('woff'),
+	     url('../fonts/diablo-webfont.ttf') format('truetype'),
+	     url('../fonts/diablo-webfont.svg#webfont') format('svg');
+}
+
+
+body{
+	background-repeat: no-repeat;
+	background: #000000; /* Old browsers */
+	overflow: hidden;
+	cursor: url(../assets/cursor.png), auto;
+}	
+
+#ctrlexplain{
+	font-family: diablo;
+	color: white;
+	position: relative;
+	top: 22px;
+	left: 1px;
+	margin-top: 0px;
+	text-align: center;
+}
+#container{
+	background-image: url(../images/exile.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: auto;
+}
+
+#statuscontainer{
+	width: 1000px;
+	height: 192px;
+	border: 7px solid white;
+	position: relative;
+	margin: 0 auto;
+	-mox-border-image: url(../images/mid-textboxleft.gif) 30 round;
+	-webkit-border-image: url(../images/mid-textboxleft.gif) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/mid-textboxleft.gif) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/mid-textboxleft.gif) 30 round;
+    border-image-repeat: initial;
+}
+
+#footer{
+	margin: 0 auto;
+	display: table;
+}
+
+footer h1{
+	font-family: diablo;
+}
+
+#andariel{
+margin: 0 auto;
+}
+/*GAMEPLAY AREA Heroes/Enemies/Item Spawn*/
+
+#gamestage{
+	width: 1000px;
+	height: 815px;
+	border: 7px solid black;
+	position: relative;
+	margin: 0 auto;
+	background: #747474; /* Old browsers 
+	background: -moz-radial-gradient(center, ellipse cover,  #747474 0%, #000000 99%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#747474), color-stop(99%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #747474 0%,#000000 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #747474 0%,#000000 99%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #747474 0%,#000000 99%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #747474 0%,#000000 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747474', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	box-shadow: 0 0 145px #CD6000;
+	-webkit-border-image: url(../images/mid-textboxleft.gif) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/mid-textboxleft.gif) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/mid-textboxleft.gif) 30 round;
+    border-image-repeat: initial;
+    overflow: hidden;
+
+}
+
+#hero{
+	width:45px;
+	height: 45px;
+	background-color: #2218DA;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.hitbox{
+	/*background-color: #F70000;*/
+	background-image: url(../assets/items/W_Sword013_angles.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 40px;
+	height: 40px;
+	
+}
+.targetdot{
+	width: 15px;
+	height: 15px;
+	background-color: #F39E25;
+	position: absolute;
+	border-radius: 50%;
+	top: 100px;
+	left: 100px;
+}
+
+.enemy{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 50%;
+	position: absolute;
+	background-color: #E81111;
+	top: 10px;
+	left: 10px;
+}
+
+#buff img{
+	/*background-image: url(../assets/items/S_buff01.png);*/
+	width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 821px;
+    left: 22px;
+}
+
+#strength{
+	left: 4px;
+	top: 0;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+}
+#regen{
+	left: 86px;
+	top: 0;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+}
+
+#venom{
+	left: 177px;
+	top: 0;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+
+}
+
+#ice{
+	left: 267px;
+	top: 0;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+}
+#lightning{
+	left: 352px;
+	top: 0px;
+	height: 84px;
+	width: 84px;
+	position: absolute;
+}
+#statuscontainer img{
+	width: 100%;
+}
+.lightning{
+	background-image: url(../assets/items/S_Thunder04.png);
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.strength{
+	background-image: url(../assets/items/S_Buff02.png);
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.venom{
+	background-image: url(../assets/items/S_Poison07.png);
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.ice{
+	background-image: url(../assets/items/S_Ice02.png);
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.regen{
+	background-image: url(../assets/items/S_Holy03.png);
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.explosion{
+	background-position: 0px 0px;
+	background-image: url(../assets/items/expsprite.png);
+	position: absolute;
+	top: 20px;
+	left:20px;
+	width: 250px;
+	height: 250px;
+}
+
+#potcontrol{
+	top: -829px;
+	left: 0;
+	position: absolute;
+}
+
+.potions{
+	width: 55px;	
+	position: absolute;
+
+}
+
+.pot1{
+	top: 850px;
+	left: 780px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 25px;
+	box-shadow: 0 0 30px #CCCCCC;
+}
+.pot2{
+	top: 850px;
+	left: 839px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 25px;
+	box-shadow: 0 0 30px #CCCCCC;
+}
+.pot3{
+	top: 850px;
+	left: 898px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 25px;
+	box-shadow: 0 0 30px #CCCCCC;
+}
+.pot4{
+	top: 909px;
+    left: 810px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 25px;
+	box-shadow: 0 0 30px #CCCCCC;
+}
+.pot5{
+	top: 909px;
+    left: 870px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: solid 2px white;
+	border-radius: 25px;
+	box-shadow: 0 0 30px #CCCCCC;
+}
+/*--------------------------USER INTERFACE-----------------------*/
+
+
+
+#xp{
+	width: 97.5%;
+	height: 20px;
+	top: 157px;
+	left: 10px;
+	border: solid black 3px;
+	margin-top: 5px;
+	overflow: hidden;
+	position: absolute;
+	box-shadow: 0 0 30px #951BAB;
+}
+#xpcount{
+	color: white;
+	text-align: center;
+	
+	width: 0%;
+	height: 20px;
+	background-color: #951BAB;
+}
+#xpname {
+    float: left;
+    top: -17px;
+    left: 11px;
+    color: white;
+    font-family: diablo;
+    font-size: 22px;
+    position: absolute;
+}
+#healthcount{
+	color: white;
+	font-size: 30px;
+	text-align: left;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+
+#health{
+	width: 500px;
+	height: 50px;
+	top: 90px;
+	left: 10px;
+	border: solid black 3px;
+	margin-top: 5px;
+	position: absolute;
+	box-shadow: 0 0 30px #F34C4C;
+}
+
+#healthamount {
+	width: 100%;
+	height: 100%;
+	background-color: #E80707;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.xpbar{
+	margin-left: 5px;
+}
+
+/*inputs and BUTTONS*/
+
+
+.bttn1{
+	width: 215px;
+	height: 60px;
+	position: absolute;
+	top: 76px;
+	left: 540px;
+	border-radius: 75%;
+	font-size: 24px;
+	background-color: #1C1818;
+	color: white;
+	font-family: diablo;
+	border: 2px solid #626060;
+	box-shadow: 0 0 120px -6px #1A5DE5;
+}
+
+
+#heads{
+	color: white;
+	z-index: 5;
+	position: absolute;
+	font-family: diablo;
+	top: -12px;
+	left: 9px;
+}
+
+#youwin{
+	position: absolute;
+	top: 260px;
+	left: 430px;
+	color: white;
+	font-family: diablo;
+	box-shadow: 0 0 387px #CD6000;
+}
+
+#youdied{
+	position: absolute;
+	top: 260px;
+	left: 244px;
+	color: white;
+	font-family: diablo;
+	box-shadow: 0 0 387px #CD6000;
+}
