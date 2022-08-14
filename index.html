@@ -6,10 +6,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-	<audio id="myAudio" preload="auto">
-		<source src="assets/music.wav" type="audio/wav" id="audio">
-	</audio>
-	<a id="audio-btn" onClick="togglePlay()">Click here to hear music.</a>
+	
+	<!-- <a id="audio-btn" onClick="togglePlay()">Click here to hear music.</a> -->
 		<div id="container">
 			<div id="gamestage">
 				<div id="hero" style="top: 202.01388835907px; left: 647.01388835907px;"></div>
@@ -46,6 +44,9 @@
 			</div>			
 		</div>
 		<a id="audio-btn" onClick="togglePlay()">Click here to hear music.</a>
+		<audio id="myAudio" preload="auto" loop>
+			<source src="assets/music.wav" type="audio/wav" id="audio">
+		</audio>
 		<hr/>
 	<h1 id="ctrlexplain">Controls: WASD/Arrow Keys = Move  |  SHIFT = Run<br>SPACE = Attack</br></h1>
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
