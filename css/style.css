@@ -13,7 +13,7 @@ html{
 	     url('../fonts/diablo-webfont.ttf') format('truetype'),
 	     url('../fonts/diablo-webfont.svg#webfont') format('svg');
 }
-TEST
+
 body{
 	background-repeat: no-repeat;
 	background: #000000; /* Old browsers */
@@ -63,6 +63,16 @@ footer h1{
 #andariel{
 margin: 0 auto;
 }
+
+/* Audio Button*/
+#audio-btn{
+	color: white;
+    font-size: 34px;
+	display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
 /*GAMEPLAY AREA Heroes/Enemies/Item Spawn*/
 
 #gamestage{
