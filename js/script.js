@@ -1,5 +1,73 @@
 // ----------ITEMS ------->
 myarray = ["strength", "regen", "venom", "ice", "lightning"];
+
+// ----------HERO VARIABLES-------->
+// all starting values for the hero
+// Core Stats
+var health = 100;
+var maxhealth = 100;
+var mana = 100;
+var maxmana = 100;
+var level = 1;
+var gold = 0;
+var attack = 10;
+var defense = 10;
+var speed = 10;
+// secondary stats
+var strength = 10;
+var intelligence = 10;
+var dexterity = 10;
+var luck = 10;
+var charisma = 10;
+var wisdom = 10;
+var constitution = 10;
+// resistances
+var venomResistance = 10;
+var iceResistance = 10;
+var lightningResistance = 10;
+var regen = 0;
+
+
+
+// ----------ENEMY VARIABLES-------->
+// TODO: do we want to make a Class of enemy and spawn multiple enemies with random attributes?
+
+// all starting values for the enemy
+// Core Stats
+var enemyHealth = 100;
+var enemyMaxhealth = 100;
+var enemyMana = 100;
+var enemyMaxmana = 100;
+var enemyLevel = 1;
+var enemyGold = 0;
+var enemyAttack = 10;
+var enemyDefense = 10;
+var enemySpeed = 10;
+// secondary stats
+var enemyStrength = 10;
+var enemyIntelligence = 10;
+var enemyDexterity = 10;
+var enemyLuck = 10;
+var enemyCharisma = 10;
+var enemyWisdom = 10;
+var enemyConstitution = 10;
+// resistances
+var enemyVenomResistance = 10;
+var enemyIceResistance = 10;
+var enemyLightningResistance = 10;
+var enemyRegen = 0;
+
+
+// ----------ITEM VARIABLES-------->
+var strength = 0;
+var regen = 0;
+var venom = 0;
+var ice = 0;
+var lightning = 0;
+
+
+
+
 //XP VARIABLE
 var xp = 0;
 
