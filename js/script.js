@@ -116,7 +116,10 @@ function movement() {
   //     $('#healthamount').width(width - 10);
   // }
 } //end movement()
-startgame(); //starts the game, switch to a button later
+// startgame(); //starts the game, switch to a button later
+
+// add event listeners to the input with id of start-btn
+document.getElementById("start-btn").addEventListener("click", startgame);
 
 $(document).keydown(function (e) {
   //   console.log(e.which); //which key was pressed

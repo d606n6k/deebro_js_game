@@ -37,9 +37,25 @@ body{
 	width: 100%;
 	height: auto;
 }
+
+#start-btn{
+	color: black;
+    background-color: grey;
+    font-size: 34px;
+    font-family: 'diablo';
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 60px;
+    display: block;
+    display: block;
+    padding: 20px;
+    width: 200px;
+}
+
 hr{
 	width: 982px;
 }
+
 #statuscontainer{
 	width: 1000px;
 	height: 192px;
